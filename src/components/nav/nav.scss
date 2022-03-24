@@ -1,0 +1,24 @@
+@use "../../colors" as colors;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.nav {
+  // background-color: colors.$red-600;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    
+    li {
+      font-size: 1.25rem;
+      color: colors.$red-600;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
+}
