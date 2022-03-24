@@ -1,5 +1,7 @@
 # Odin Project Restaurant Page
 
+This project uses the understanding of Webpack to build a web page.
+
 ## Assignment
 
 - [x] 1.  Start the project the same way you began the webpack tutorial project.
