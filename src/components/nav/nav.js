@@ -16,8 +16,8 @@ const Nav = () => {
   contact.dataset.id = "contact";
   contact.classList.add("nav-list-item");
   const about = document.createElement("li");
-  about.textContent = "About Us";
-  about.dataset.id = "about"
+  about.textContent = "About";
+  about.dataset.id = "about";
   about.classList.add("nav-list-item");
 
   navList.appendChild(menu);
@@ -35,12 +35,12 @@ const navTabSwitch = () => {
   navItems.forEach((navItem) => {
     navItem.addEventListener("click", () => {
       const content = document.querySelector(".content");
-      
+
       if (content.hasChildNodes()) {
         let childNodes = content.childNodes;
         for (let i = 0; i < childNodes.length; i++) {
           if (childNodes[i].dataset.id !== navItem.dataset.id) {
-            childNodes[i].classList.add("hidden"); 
+            childNodes[i].classList.add("hidden");
           } else {
             childNodes[i].classList.remove("hidden");
           }
