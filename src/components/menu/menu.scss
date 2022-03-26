@@ -1,0 +1,59 @@
+@use "../../colors" as colors;
+
+.menu {
+  height: 100%;
+  padding: 1.5rem;
+
+  .menu-title {
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px 0;
+    color: colors.$yellow;
+  }
+
+  ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+
+    li {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 1fr 1fr;
+
+      .menu-item-image {
+        width: 100%;
+        height: 200px;
+      }
+      
+      > div {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+      }
+
+      .menu-name-price-container {
+        display: flex;
+        justify-content: space-between;
+
+        .menu-item-name, .menu-item-price {
+          font-size: 1.5rem;
+          color: colors.$yellow;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .menu {
+    ul {
+      li {
+        grid-template-columns: 1fr;
+      }
+    } 
+  }
+}
