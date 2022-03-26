@@ -12,7 +12,7 @@ const Content = () => {
   contact.classList.add("hidden");
   content.appendChild(contact)
   const about = About()
-  contact.classList.add("hidden");
+  about.classList.add("hidden");
   content.appendChild(about)
   return content;
 };
