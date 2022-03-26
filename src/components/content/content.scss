@@ -1,0 +1,21 @@
+@use "../../colors" as colors;
+
+.content {
+  background-color: colors.$neutral-800;
+  border-radius: 5px;
+  width: 60%;
+  color: colors.$white;
+}
+
+@media screen and (max-width: 720px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    width: 100%;
+    border-radius: 0;
+  }
+}
